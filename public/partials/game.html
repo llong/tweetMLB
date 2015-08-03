@@ -1,0 +1,49 @@
+<a href="/#/" class="btn btn-primary">Back</a>
+
+
+
+<div class="container">
+  <div class="row">
+  <div class="col-md-6">
+  <div class="team-{{games[whichGame].away_team_name}} single-game"></div>
+  <h1 class="gameTitle" ng-bind="
+  games[whichGame].away_team_name +
+  ' ' +
+  games[whichGame].linescore.r.away +
+  ' @ ' +
+  games[whichGame].linescore.r.home +
+  ' ' +
+  games[whichGame].home_team_name">
+  </h1>
+  <div class="team-{{games[whichGame].home_team_name}} single-game"></div>
+</div>
+
+<div class="col-md-6">
+  {{games[whichGame].status.inning_status}} {{games[whichGame].status.inning}}
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+  <section ng-controller="tweetsController">
+    <ul class="list-group">
+
+      <li class="list-group-item" ng-repeat="tweet in tweets">
+        <h4 ng-bind="'@' + tweet.user.screen_name"></h4>
+      <img src="{{tweet.user.profile_image_url}}" class="img-circle">{{tweet.text}}
+    </li>
+  </section>
+  </div>
+
+  <div class="col-md-6">
+  <section ng-controller="tweetsController">
+    <ul class="list-group">
+
+      <li class="list-group-item" ng-repeat="tweet in tweets">
+        <h4 ng-bind="'@' + tweet.user.screen_name"></h4>
+      <img src="{{tweet.user.profile_image_url}}" class="img-circle">{{tweet.text}}
+    </li>
+  </section>
+  </div>
+</div>
+</div>

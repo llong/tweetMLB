@@ -1,0 +1,191 @@
+body,html {
+  background: #222;
+  color: rgba(255,255,255,.65);
+}
+
+.table>tbody>tr>td {
+  vertical-align: middle;
+}
+
+.table>tbody>tr>td:first-of-type {
+  width: 178px;
+}
+
+[class*="team"] {
+  background-image: url('../images/mlb_logo_sprite.png');
+  zoom: 0.5;
+  -moz-transform:scale(0.5);
+  -moz-transform-origin: 0 0;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.single-game {
+  zoom: 1;
+  -moz-transform:scale(1);
+  -moz-transform-origin: 0 0;
+}
+
+.team-Orioles {
+  background-position: 0px 0px;
+}
+
+.team-Red-Sox {
+  background-position: -70px 0px;
+}
+
+.team-Yankees {
+  background-position: -140px 0px;
+}
+
+.team-Rays {
+  background-position: -210px 0px;
+}
+
+.team-Blue-Jays {
+  background-position: -280px 0px;
+}
+
+.team-White-Sox {
+  background-position: -350px 0px;
+}
+
+.team-Indians {
+  background-position: -420px 0px;
+}
+
+.team-Tigers {
+  background-position: -490px 0px;
+}
+
+.team-Royals {
+  background-position: -560px 0px;
+}
+
+.team-Twins {
+  background-position: -630px 0px;
+}
+
+.team-Angels {
+  background-position: 0px -70px;
+}
+
+.team-Athletics {
+  background-position: -70px -70px;
+}
+
+.team-Mariners {
+  background-position: -140px -70px;
+}
+
+.team-Rangers {
+  background-position: -210px -70px;
+}
+
+.team-Braves {
+  background-position: -280px -70px;
+}
+
+.team-Marlins {
+  background-position: -350px -70px;
+}
+
+.team-Nationals {
+  background-position: -420px -70px;
+}
+
+.team-Mets {
+  background-position: -490px -70px;
+}
+
+.team-Phillies {
+  background-position: -560px -70px;
+}
+
+.team-Cubs {
+  background-position: -630px -70px;
+}
+
+.team-Reds {
+  background-position: 0px -140px;
+}
+
+.team-Astros {
+  background-position: -70px -140px;
+}
+
+.team-Brewers {
+  background-position: -140px -140px;
+}
+
+.team-Pirates {
+  background-position: -210px -140px;
+}
+
+.team-Cardinals {
+  background-position: -280px -140px;
+}
+
+.team-D-backs {
+  background-position: -350px -140px;
+}
+
+.team-Rockies {
+  background-position: -420px -140px;
+}
+
+.team-Dodgers {
+  background-position: -490px -140px;
+}
+
+.team-Padres {
+  background-position: -560px -140px;
+}
+
+.team-Giants {
+  background-position: -630px -140px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: #333;
+}
+
+.list-group-item {
+  background-color: #333;
+  border: none;
+  margin: 5px 0;
+}
+
+.allGames.panel {
+  width: 400px;
+  float: left;
+  margin: 5px;
+  background: #333;
+  transition: all .1s ease-in-out;
+}
+
+.allGames.panel:hover {
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(105,141,219,.75);
+}
+
+.gameTitle {
+  display: inline;
+}
+
+.darkBG {
+  background: #222;
+}
+
+.muted-text {
+  color: rgba(255,255,255,.3);
+}
+
+@media (max-width: 819px) {
+  .allGames.panel {
+    width: calc(100% - 10px);
+  }
+}
